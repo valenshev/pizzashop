@@ -1,0 +1,165 @@
+// __btn--wide {
+//     cursor: pointer;
+//     transition: all 0.3s ease;
+//   }
+//   & hover {
+//     border-radius: 8px;
+//   }
+//   &__meu__cards {
+//     width: 297px;
+//     height: 459px;
+//   }
+//   &__row.col-4 {
+//     h3: center;
+//   }
+//  &__menu__card {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     text-align: center;
+//     color: white;
+// }
+// & p {
+//     color: #A3A3A3;
+// }
+// &__btn {
+//     width: 40px;
+//     height: 40px;
+//    }
+//  &__btn--mediumwide {
+//     width: 194px;
+//     height: 45px;
+//     border-radius: 30%;
+//     border: $btn-gradient-right-left;
+//  }  
+// & text-white {
+//     size: 25px;
+// }
+// &__btn--rounded--smoll {
+//     size: 23px;
+// }
+// &__image-text-container {
+//    position: relative; 
+//    display: inline-block;
+//    margin-top: 54px;
+// }
+// &__text-overlay {
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     color: white;
+    
+// }
+
+.menu {
+  &__cards {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 40px;
+    &__item {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      flex-direction: column;
+      max-width: 297px;
+      &[disabled='true'] {
+        pointer-events: none;
+        filter: grayscale(80%);
+      }
+      &__img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        margin-top: 54px;
+        margin-left: 61px;
+        margin-right:72px;
+      }
+      &__title {
+        color: #fff;
+        font-size: 25px;
+        font-family: "Roboto-Medium", Arial, Helvetica, sans-serif;
+        padding-top: 20px;
+        padding-left: 0px;
+        padding-right: 116 px;
+        padding-bottom:20px;
+      }
+      .p {
+        padding-left: 27px;
+        padding-right: 41px;
+      }
+      &__btns {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 194px;
+        min-width: 194px;
+        margin-left: 48px;
+        margin-right: 55px;
+        margin-bottom: 20px;
+        .btn {
+          width: 40px;
+          height: 40px;
+          border: 2px solid $main-paragraph-color;
+          color: $main-paragraph-color;
+          margin-right: 37px;
+        }
+      }
+      &__ingredients {
+        width: 194px;
+        border-radius: 30px;
+        border-style: solid;
+        border-width: 2px;
+        position: relative;
+        background: $btn-gradient-left-right;
+        margin-bottom: 30px;
+        &::before {
+          content: "+ Ingredients";
+          width: 99%;
+          height: 99%;
+          position: absolute;
+          left: 45.5%;
+          margin-left: -45%;
+          border-radius: 30px;
+          background-color: $bg-darbkbrown;
+          color: $bg-orange;
+        }
+        // border-image: $btn-gradient-left-right;
+        // border-image-slice: 1; /* Обеспечивает растягивание градиента по границе */
+      }
+      &__counter {
+        p {
+          font-family: "Roboto-Medium", Arial, Helvetica, sans-serif;
+          font-size: 25px;
+          color: #fff;
+          margin-bottom: 0;
+        }
+        div {
+          width: 82px;
+          height: 23px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+           p {
+            margin: 0;
+            font-size: 22px;
+            color: $main-paragraph-color;
+           }
+
+          .btn {
+            width: 23px;
+            height: 23px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid $main-paragraph-color;
+            color: $main-paragraph-color;
+            font-size: 17px;
+            margin-top: 0px;
+            }
+        }
+      }
+    }
+  }
+}

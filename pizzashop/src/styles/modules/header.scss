@@ -1,0 +1,57 @@
+.header {
+    width: 100%;
+    height: auto;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    &__login {
+        width: 162px;
+        height: 37px;
+        text-decoration: none;
+        &:hover {
+            cursor: pointer;
+            text-decoration: none;
+        }
+    }
+    &__nav {
+        flex-direction: row;
+        &__list {
+            height: auto;
+            min-width: 396px;
+            max-width: 396px;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            & li {
+                & a {
+                    color: $main-paragraph-color;
+                    font-size: 17px;
+                    text-decoration: none;
+                    &:hover {
+                       font-size: 17px;
+                        background: $text-diagonal-gradient;
+                        -webkit-background-clip: text;
+                        background-clip: text;
+                        color: transparent;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+    }
+    &__cartBtn {
+        width: 40px;
+        height: 40px;
+        background: $btn-gradient-right-left;
+        & i {
+            color: #fff;
+        }
+    }
+    &__buttons {
+        min-width: 229px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

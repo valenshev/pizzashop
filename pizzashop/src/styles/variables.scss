@@ -1,0 +1,25 @@
+// Кастомные переменные проекта
+$primary: #4caf50;
+$bg-main: linear-gradient(to right, #1E0C00,  #1F0700 31%,  #170A00 69%,  #1E0D00 100%);
+$btn-gradient-left-right: linear-gradient(45deg, #ff5d29, #fe9c1c);
+$btn-gradient-right-left: linear-gradient(45deg, #fe9c1c, #ff5d29);
+$btn-gradient: linear-gradient(207deg, #FE9C1C, #FF5E2A);
+$text-diagonal-gradient: linear-gradient(60deg,  #ffa228, #ff6432);
+$text-horizontal-gradient: linear-gradient(to right, #ff6432, #ffa228);
+$main-paragraph-color: #a3a3a3;
+$base-transition: all .2s ease-in;
+$bg-darbkbrown: #1D0800;
+$bg-orange: #FF5924;
+$margin-3: 3rem;
+$margin-4: 4rem;
+
+// Переопределение переменных Bootstrap (опционально)
+// Раскомментируйте и измените по необходимости:
+// $primary: #4caf50;
+// $secondary: #6c757d;
+// $success: #198754;
+// $info: #0dcaf0;
+// $warning: #ffc107;
+// $danger: #dc3545;
+// $light: #f8f9fa;
+// $dark: #212529;

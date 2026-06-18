@@ -1,0 +1,120 @@
+button {
+  appearance: none;
+  cursor: pointer;
+  border: none;
+}
+
+a {
+  transition: $base-transition;
+}
+
+ul {
+  padding-left: 0;
+}
+
+.btn {
+  height: auto;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: all .2s ease-in;
+}
+.btn--rounded {
+  border-radius: 50%;
+}
+.btn--big {
+  font-size: 22px;
+}
+.btn--small {
+  font-size: 17px;
+  padding-top: 8x;
+  padding-bottom: 8px;
+}
+.btn--smallwide {
+  min-width: 163px;
+  min-height: 40px;
+}
+.btn--mediumwide {
+  min-width: 194px;
+}
+.btn--wide {
+  min-width: 204px;
+}
+.btn--gradient--right {
+  background: $btn-gradient-left-right;
+  color: #fff !important;
+  border: none !important;
+  &:hover {
+    cursor: pointer;
+    background: $btn-gradient-right-left;
+    color: #fff;
+  }
+}
+.btn--gradient--left {
+  background: $btn-gradient-right-left;
+  color: #fff !important;
+  border: none !important;
+  &:hover {
+    cursor: pointer;
+     background: $btn-gradient-left-right;
+     color: #fff;
+  }
+}
+
+.gradient-text {
+    font-size: 17px;
+    background: $text-diagonal-gradient;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+}
+
+
+a {
+  transition: all 0.2s ease-in;
+}
+// a:hover {
+//   color: red;
+// }
+
+.demo-icon {
+        font-family: "fontello";
+      font-style: normal;
+      font-weight: normal;
+     
+     
+      display: inline-block;
+      text-decoration: inherit;
+      width: 1em;
+      margin-right: .2em;
+      text-align: center;
+      /* opacity: .8; */
+     
+      /* For safety - reset parent styles, that can break glyph codes*/
+      font-variant: normal;
+      text-transform: none;
+     
+      /* fix buttons height, for twitter bootstrap */
+      line-height: 1em;
+     
+      /* Animation center compensation - margins should be symmetric */
+      /* remove if not needed */
+      margin-left: .2em;
+     
+      /* You can be more comfortable with increased icons size */
+      /* font-size: 120%; */
+     
+      /* Font smoothing. That was taken from TWBS */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+     
+      /* Uncomment for 3D effect */
+      /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+    }
+
+    .d--none {
+      display: none !important;
+    }

@@ -1,0 +1,50 @@
+ 
+.about {
+    display: flex;
+    flex-direction: column;
+    &__pepperoniPizza {
+        max-width: 567px;
+        max-height: 541px;
+        position: relative;
+        z-index: 100; 
+        &::after {
+                    content: "";
+                    width: 236px;
+                    height: 236px;
+                    background: url('../../assets/images/pizza_piece.png') no-repeat center;
+                    background-size: cover;
+                    position: absolute;
+                    z-index: 101;
+                    top:-55px;
+                    right:-30px;
+        }
+        &::before {
+            content: "";
+            width: 203px;
+            height: 215px;
+            background: url('../../assets/images/fries.png') no-repeat center;
+            background-size: cover;
+            position: absolute;
+            z-index: 101;
+            bottom: 0;
+            left:-50px;
+        }
+    }
+    &__title {
+        font-size: 69px;
+        font-family: "Roboto-black",Arial, Helvetica, sans-serif;
+        height: 76px;
+        margin-bottom: $margin-4;
+    }
+
+    & img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        margin-bottom: $margin-4;
+    }
+
+    & p {
+        margin-bottom: $margin-4;
+    }
+}
