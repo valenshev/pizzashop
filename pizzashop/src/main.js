@@ -380,8 +380,10 @@ if (location.pathname === '/cart.html') {
 
   // test
   const cartTotalPriceElement = document.querySelector('.cart__total-price');
+  if (cartTotalPriceElement) {
   let cartTotalPrice = Number(cartTotalPriceElement.textContent);
-  console.log(cartTotalPrice);
+
+  }
 
   document.querySelectorAll('.cart__block__item').forEach((item) => {
         const cart__minus__btn = item.querySelector(".btn-minus");
@@ -491,11 +493,13 @@ if (location.pathname === '/cart.html') {
       localStorage.setItem('cart', JSON.stringify(cart));
 
   }
-
+  if (document.querySelector('#orderBtn')) {
   document.querySelector('#orderBtn').addEventListener('click', (evt) => {
     evt.preventDefault();
     alert('Заказ успешно оформлен! Спасибо за покупку!');
   })
+  }
+
 
   function calculateCartTotalFirstTime() {
       let cartPrice = 0;
