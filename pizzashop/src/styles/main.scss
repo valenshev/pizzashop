@@ -1,5 +1,31 @@
-@import './variables.scss';
-@import './root.scss';
-@import './colors.scss';
-@import './uikit.scss';
-@import './fonts.scss';
+// @use 'variables' as *;
+// @use 'root' as *;
+// @use 'colors' as *;
+// @use 'uikit' as *;
+// @use 'fonts' as *;
+
+// // Импортируем модули
+// @use 'modules/about' as *;
+// @use 'modules/cart' as *;
+// @use 'modules/firstScreen' as *;
+// @use 'modules/events' as *;
+// @use 'modules/header' as *;
+// @use 'modules/footer' as *;
+// @use 'modules/menu' as *;
+// @use 'modules/mostPopular' as *;
+
+@import 'variables';
+@import 'root';
+@import 'colors';
+@import 'uikit';
+@import 'fonts';
+
+// Модули
+@import 'modules/about';
+@import 'modules/cart';
+@import 'modules/firstScreen';
+@import 'modules/events';
+@import 'modules/header';
+@import 'modules/footer';
+@import 'modules/menu';
+@import 'modules/mostPopular';

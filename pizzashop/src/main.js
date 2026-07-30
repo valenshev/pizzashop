@@ -1,4 +1,4 @@
-import "/src/styles/main.scss";
+import '@styles/main.scss';
 
 import {getCartFromLocalStorage, preventNegativeValues} from "/src/shared/functions.js";
 
@@ -12,7 +12,7 @@ const pizzaMenu = [
   {
     id: 1,
     title: 'Italian',
-    img: './src/assets/images/Italian.png',
+    img: '@styles/src/assets/images/Italian.png',
     filling: 'Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...',
     price: 8.35,
     quantity: 1,
@@ -24,7 +24,7 @@ const pizzaMenu = [
   {
     id: 2,
     title: 'Venecia',
-    img: './src/assets/images/pizzavenecia.png',
+    img: '@styles/src/assets/images/pizzavenecia.png',
     filling: 'Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...',
     price: 10,
     quantity: 1,
@@ -36,7 +36,7 @@ const pizzaMenu = [
   {
     id: 3,
     title: 'Meat',
-    img: './src/assets/images/miasnaia.png',
+    img: '@styles/src/assets/images/miasnaia.png',
     filling: 'Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...',
     price: 10,
     quantity: 1,
@@ -48,7 +48,7 @@ const pizzaMenu = [
   {
     id: 4,
     title: 'Cheese',
-    img: './src/assets/images/pizzacheese.png',
+    img: '@styles/src/assets/images/pizzacheese.png',
     filling: 'Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...',
     price: 10,
     quantity: 1,
@@ -60,7 +60,7 @@ const pizzaMenu = [
   {
     id: 5,
     title: 'Argentina',
-    img: './src/assets/images/pizzaargentina.png',
+    img: '@styles/src/assets/images/pizzaargentina.png',
     filling: 'Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...',
     price: 8.35,
     quantity: 1,
@@ -72,7 +72,7 @@ const pizzaMenu = [
   {
     id: 6,
     title: 'Gribnaia',
-    img: './src/assets/images/gribnaya.png',
+    img: '@styles/src/assets/images/gribnaya.png',
     filling: 'Filling:  onion, potato, tomato, mushrooms, cheese, olives, meat...',
     price: 10,
     quantity: 1,
@@ -84,7 +84,7 @@ const pizzaMenu = [
   {
     id: 7,
     title: 'Tomato',
-    img: './src/assets/images/pizzatomato.png',
+    img: '@styles/src/assets/images/pizzatomato.png',
     filling: 'Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...',
     price: 10,
     quantity: 1,
@@ -96,7 +96,7 @@ const pizzaMenu = [
   {
     id: 8,
     title: 'Italian x2',
-    img: './src/assets/images/pizzaitalian2.png',
+    img: '@styles/src/assets/images/pizzaitalian2.png',
     filling: 'Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...',
     price: 10,
     quantity: 1,
