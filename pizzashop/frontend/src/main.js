@@ -568,6 +568,14 @@ contactForm.addEventListener('submit', (e) => {
   })
 });
 
+
+/*
+const pizzas = await fetch('http://localhost:3001/pizzas')
+pizzas.
+
+
+*/
+
 // async await
 async function createUser(userData) {
   try {

@@ -1,0 +1,45 @@
+@baseUrl = http://localhost:3000
+
+### Получить всех пользователей
+GET {{baseUrl}}/api/users
+
+
+### Создать пользователя
+POST {{baseUrl}}/api/users
+Content-Type: application/json
+
+{
+  "name": "Linus",
+  "email": "linus@blog.dev"
+}
+
+
+### Изменить пользователя
+PATCH {{baseUrl}}/api/users/1
+Content-Type: application/json
+
+{
+  "name": "Ada Lovelace"
+}
+
+
+### Удалить пользователя
+DELETE {{baseUrl}}/api/users/1
+
+### Find users By Name
+GET {{baseUrl}}/api/users/find?email=ya
+
+GET {{baseUrl}}/api/users/list?page=1&limit=10&offset=1&sort=email&order=asc
+
+GET {{baseUrl}}/api/users/query?q=pet
+
+GET {{baseUrl}}/api/pizzas
+
+GET {{baseUrl}}/api/ingredients
+
+GET {{baseUrl}}/api/categories
+GET {{baseUrl}}/api/orders
+
+GET {{baseUrl}}/api/sizes
+
+GET {{baseUrl}}/api/orders/withusers
