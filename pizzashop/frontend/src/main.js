@@ -107,20 +107,29 @@ const COEFS = {
 //   }
 // ];
 
-const pizzaMenu = fetch('http://localhost:3000', {
-    method: 'GET'
-  })
-  .then((response) => {
-    console.log(response)
-  })
-  .catch((error) => {
-    console.log(error);
-  })
 
+  let pizzaMenu;
+
+async function loadPizzas() {
+  try {
+      const response = await fetch('http://localhost:3000/api/pizzas/findAllPizzas')
+      pizzaMenu = await response.json();
+  }
+  catch(e) {
+    console.log(e)
+  }
+}
+
+loadPizzas();
+
+
+
+console.log(pizzaMenu);
 
 
 const pizzaTemplate = document.querySelector('#pizzaCardTemplate');
 if (pizzaTemplate) {
+
   pizzaMenu.forEach((item) => {
    let menuCard = pizzaTemplate.content.cloneNode(true);
    menuCard.querySelector('.menu__cards__item__type').dataset.type = item.type; // отсюда взять селектор
