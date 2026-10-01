@@ -35,6 +35,8 @@ GET {{baseUrl}}/api/users/query?q=pet
 
 GET {{baseUrl}}/api/pizzas
 
+GET {{baseUrl}}/api/pizzas/findAllPizzas
+
 GET {{baseUrl}}/api/ingredients
 
 GET {{baseUrl}}/api/categories

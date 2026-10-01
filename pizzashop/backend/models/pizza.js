@@ -25,8 +25,8 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.FLOAT,
         allowNull: false,
       },
-       ingredients_id: {
-        type: DataTypes.FLOAT,
+      ingredient_id: {
+        type: DataTypes.INTEGER,
         allowNull: false,
       },
       image: {
@@ -53,16 +53,16 @@ module.exports = (sequelize, DataTypes) => {
   
   Pizza.associate = (models) => {
     Pizza.belongsTo(models.Ingredient, {
-      foreignKey: 'ingredient',
-      as: 'ingredient'
+      foreignKey: 'ingredient_id',
+      as: 'pizzaIngredient'
     }),
     Pizza.belongsTo(models.Size, {
-      foreignKey: 'size',
-      as: 'size'
+      foreignKey: 'size_id',
+      as: 'pizzaSize'
     }),
     Pizza.belongsTo(models.Category, {
-      foreignKey: 'category',
-      as: 'category'
+      foreignKey: 'category_id',
+      as: 'pizzaCategory'
     })
   }
   return Pizza;

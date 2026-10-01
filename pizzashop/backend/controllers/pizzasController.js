@@ -1,7 +1,11 @@
-const {Pizza} = require('../models');
+const {Pizza, Size, Ingredient, Category} = require('../models');
 const {Op} = require('sequelize');
 
 const SORTABLE = new Set(['created_at', 'name'])
+
+const limit = 10;
+const offset = 1;
+const page = 1;
 
 // export const getPizzas = async (req, res) => {
 //     const pizzas = {
@@ -33,7 +37,7 @@ async function getAllPizzas(req, res, next) {
             }
         );
         if (!pizzas) {
-            res.send(404).json({
+            res.status(404).json({
                 message: 'not found'
             })
         }
@@ -48,23 +52,18 @@ async function findPizzasWithSizesIngredients(req, res, next) {
       where: {},
       include: [
         {
-          model: Pizza,
-          as: 'pizza',
-          attributes: ['id']
-        },
-        {
           model: Size,
-          as: 'size',
+          as: 'pizzaSize',
           attributes: ['id']
         },
         {
           model: Ingredient,
-          as: 'ingredient',
+          as: 'pizzaIngredient',
           attributes: ['id']
         },
         {
           model: Category,
-          as: 'category',
+          as: 'pizzaCategory',
           attributes: ['id']
         }
       ],

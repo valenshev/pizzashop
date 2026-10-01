@@ -26,7 +26,7 @@ module.exports = (sequelize, DataTypes) => {
 
      Size.associate = (models) => {
      Size.hasMany(models.Pizza, {
-      foreignKey: 'size',
+      foreignKey: 'size_id',
       as: 'pizza'
     })
   }

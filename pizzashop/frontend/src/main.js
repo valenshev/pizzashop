@@ -8,108 +8,120 @@ const COEFS = {
   THIRD: 3
 }
 
-const pizzaMenu = [
-  {
-    id: 1,
-    title: 'Italian',
-    img: '@styles/src/assets/images/Italian.png',
-    filling: 'Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...',
-    price: 8.35,
-    quantity: 1,
-    isAvailable: true,
-    type: 'meat',
-    size: 28,
-    is_popular: false,
-  },
-  {
-    id: 2,
-    title: 'Venecia',
-    img: '@styles/src/assets/images/pizzavenecia.png',
-    filling: 'Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...',
-    price: 10,
-    quantity: 1,
-    isAvailable: true,
-    type: 'mushroom',
-    size: 28,
-    is_popular: false,
-  },
-  {
-    id: 3,
-    title: 'Meat',
-    img: '@styles/src/assets/images/miasnaia.png',
-    filling: 'Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...',
-    price: 10,
-    quantity: 1,
-    isAvailable: true,
-    type: 'meat',
-    size: 28,
-    is_popular: false,
-  },
-  {
-    id: 4,
-    title: 'Cheese',
-    img: '@styles/src/assets/images/pizzacheese.png',
-    filling: 'Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...',
-    price: 10,
-    quantity: 1,
-    isAvailable: true,
-    type: 'vegetarian',
-    size: 28,
-    is_popular: false,
-  },
-  {
-    id: 5,
-    title: 'Argentina',
-    img: '@styles/src/assets/images/pizzaargentina.png',
-    filling: 'Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...',
-    price: 8.35,
-    quantity: 1,
-    isAvailable: true,
-    type: "vegetarian",
-    size: 28,
-    is_popular: true,
-  },
-  {
-    id: 6,
-    title: 'Gribnaia',
-    img: '@styles/src/assets/images/gribnaya.png',
-    filling: 'Filling:  onion, potato, tomato, mushrooms, cheese, olives, meat...',
-    price: 10,
-    quantity: 1,
-    isAvailable: true,
-    type: "mushroom",
-    size: 28,
-    is_popular: true,
-  },
-  {
-    id: 7,
-    title: 'Tomato',
-    img: '@styles/src/assets/images/pizzatomato.png',
-    filling: 'Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...',
-    price: 10,
-    quantity: 1,
-    isAvailable: true,
-    type: "tomato",
-    size: 28,
-    is_popular: true,
-  },
-  {
-    id: 8,
-    title: 'Italian x2',
-    img: '@styles/src/assets/images/pizzaitalian2.png',
-    filling: 'Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...',
-    price: 10,
-    quantity: 1,
-    isAvailable: false,
-    type: "italian",
-    size: 28,
-    is_popular: true,
-  }
-];
+// const pizzaMenu = [
+//   {
+//     id: 1,
+//     title: 'Italian',
+//     img: '@styles/src/assets/images/Italian.png',
+//     filling: 'Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...',
+//     price: 8.35,
+//     quantity: 1,
+//     isAvailable: true,
+//     type: 'meat',
+//     size: 28,
+//     is_popular: false,
+//   },
+//   {
+//     id: 2,
+//     title: 'Venecia',
+//     img: '@styles/src/assets/images/pizzavenecia.png',
+//     filling: 'Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...',
+//     price: 10,
+//     quantity: 1,
+//     isAvailable: true,
+//     type: 'mushroom',
+//     size: 28,
+//     is_popular: false,
+//   },
+//   {
+//     id: 3,
+//     title: 'Meat',
+//     img: '@styles/src/assets/images/miasnaia.png',
+//     filling: 'Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...',
+//     price: 10,
+//     quantity: 1,
+//     isAvailable: true,
+//     type: 'meat',
+//     size: 28,
+//     is_popular: false,
+//   },
+//   {
+//     id: 4,
+//     title: 'Cheese',
+//     img: '@styles/src/assets/images/pizzacheese.png',
+//     filling: 'Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...',
+//     price: 10,
+//     quantity: 1,
+//     isAvailable: true,
+//     type: 'vegetarian',
+//     size: 28,
+//     is_popular: false,
+//   },
+//   {
+//     id: 5,
+//     title: 'Argentina',
+//     img: '@styles/src/assets/images/pizzaargentina.png',
+//     filling: 'Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...',
+//     price: 8.35,
+//     quantity: 1,
+//     isAvailable: true,
+//     type: "vegetarian",
+//     size: 28,
+//     is_popular: true,
+//   },
+//   {
+//     id: 6,
+//     title: 'Gribnaia',
+//     img: '@styles/src/assets/images/gribnaya.png',
+//     filling: 'Filling:  onion, potato, tomato, mushrooms, cheese, olives, meat...',
+//     price: 10,
+//     quantity: 1,
+//     isAvailable: true,
+//     type: "mushroom",
+//     size: 28,
+//     is_popular: true,
+//   },
+//   {
+//     id: 7,
+//     title: 'Tomato',
+//     img: '@styles/src/assets/images/pizzatomato.png',
+//     filling: 'Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...',
+//     price: 10,
+//     quantity: 1,
+//     isAvailable: true,
+//     type: "tomato",
+//     size: 28,
+//     is_popular: true,
+//   },
+//   {
+//     id: 8,
+//     title: 'Italian x2',
+//     img: '@styles/src/assets/images/pizzaitalian2.png',
+//     filling: 'Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...',
+//     price: 10,
+//     quantity: 1,
+//     isAvailable: false,
+//     type: "italian",
+//     size: 28,
+//     is_popular: true,
+//   }
+// ];
+
+const pizzaMenu = fetch('http://localhost:3000', {
+    method: 'GET'
+  })
+  .then((response) => {
+    console.log(response)
+  })
+  .catch((error) => {
+    console.log(error);
+  })
+
+
 
 const pizzaTemplate = document.querySelector('#pizzaCardTemplate');
 if (pizzaTemplate) {
-pizzaMenu.forEach((item) => {
+  pizzaMenu.forEach((item) => {
    let menuCard = pizzaTemplate.content.cloneNode(true);
    menuCard.querySelector('.menu__cards__item__type').dataset.type = item.type; // отсюда взять селектор
    menuCard.querySelector('.menu__cards__item__type').dataset.id = item.id;
