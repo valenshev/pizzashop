@@ -14,18 +14,17 @@
 // @use 'modules/menu' as *;
 // @use 'modules/mostPopular' as *;
 
-@import 'variables';
-@import 'root';
-@import 'colors';
-@import 'uikit';
-@import 'fonts';
+@use 'colors';
+@use 'root';
+@use 'uikit';
+@use 'fonts';
 
 // Модули
-@import 'modules/about';
-@import 'modules/cart';
-@import 'modules/firstScreen';
-@import 'modules/events';
-@import 'modules/header';
-@import 'modules/footer';
-@import 'modules/menu';
-@import 'modules/mostPopular';
+@use 'modules/about';
+@use 'modules/cart';
+@use 'modules/firstScreen';
+@use 'modules/events';
+@use 'modules/header';
+@use 'modules/footer';
+@use 'modules/menu';
+@use 'modules/mostPopular';

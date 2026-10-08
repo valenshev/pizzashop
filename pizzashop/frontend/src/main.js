@@ -107,28 +107,21 @@ const COEFS = {
 //   }
 // ];
 
-
-  let pizzaMenu;
-
 async function loadPizzas() {
   try {
       const response = await fetch('http://localhost:3000/api/pizzas/findAllPizzas')
-      pizzaMenu = await response.json();
+      const result = await response.json();
+      return result.data;
   }
   catch(e) {
     console.log(e)
   }
 }
 
-loadPizzas();
-
-
-
-console.log(pizzaMenu);
-
-
-const pizzaTemplate = document.querySelector('#pizzaCardTemplate');
-if (pizzaTemplate) {
+loadPizzas()
+.then((pizzaMenu) => {
+  const pizzaTemplate = document.querySelector('#pizzaCardTemplate');
+  if (pizzaTemplate) {
 
   pizzaMenu.forEach((item) => {
    let menuCard = pizzaTemplate.content.cloneNode(true);
@@ -157,6 +150,10 @@ if (pizzaTemplate) {
   document.querySelector('.mostPopular__cards').appendChild(menuCard);
 });
 }
+})
+.catch((e) => {
+  console.error('Не удалось загрузить пиццы', e)
+})
 
 
 const productCards = document.querySelectorAll('.menu__cards__item');
